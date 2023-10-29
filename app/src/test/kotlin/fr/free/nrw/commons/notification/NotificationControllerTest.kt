@@ -24,7 +24,7 @@ class NotificationControllerTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         notificationController = NotificationController(notificationClient)
     }
 

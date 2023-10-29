@@ -43,7 +43,7 @@ class CampaignsPresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         testScheduler=TestScheduler()
         campaignsSingle= Single.just(campaignResponseDTO)
         campaignsPresenter= CampaignsPresenter(okHttpJsonApiClient,testScheduler,testScheduler)

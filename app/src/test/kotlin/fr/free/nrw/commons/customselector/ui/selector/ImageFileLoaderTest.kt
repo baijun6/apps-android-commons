@@ -55,7 +55,7 @@ class ImageFileLoaderTest {
      */
     @Before
     fun setup() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         coroutineContext = Dispatchers.Main
         imageCursor = RoboCursor()
         imageFileLoader = ImageFileLoader(context)

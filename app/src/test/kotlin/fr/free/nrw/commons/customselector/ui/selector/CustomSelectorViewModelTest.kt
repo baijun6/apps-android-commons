@@ -24,7 +24,7 @@ class CustomSelectorViewModelTest {
      */
     @Before
     fun setUp(){
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         viewModel = CustomSelectorViewModel(context, imageFileLoader);
     }
 

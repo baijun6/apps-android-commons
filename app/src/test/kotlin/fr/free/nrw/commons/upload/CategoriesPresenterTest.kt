@@ -36,7 +36,7 @@ class CategoriesPresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         testScheduler = TestScheduler()
         categoriesPresenter = CategoriesPresenter(repository, testScheduler, testScheduler)
         categoriesPresenter.onAttachView(view)

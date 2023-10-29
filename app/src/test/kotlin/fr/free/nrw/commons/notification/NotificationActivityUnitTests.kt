@@ -54,7 +54,7 @@ class NotificationActivityUnitTests {
     @Before
     fun setUp() {
 
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         networkUtils = mock(NetworkUtils::class.java)
 

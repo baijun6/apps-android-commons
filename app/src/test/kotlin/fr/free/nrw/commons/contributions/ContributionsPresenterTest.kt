@@ -47,7 +47,7 @@ class ContributionsPresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         scheduler=TestScheduler()
         cursor = Mockito.mock(Cursor::class.java)
         contribution = Mockito.mock(Contribution::class.java)

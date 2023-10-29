@@ -58,7 +58,7 @@ class DescriptionEditActivityUnitTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         context = ApplicationProvider.getApplicationContext()
         uploadMediaDetails = mutableListOf(UploadMediaDetail("en", "desc"))
                 as ArrayList<UploadMediaDetail>

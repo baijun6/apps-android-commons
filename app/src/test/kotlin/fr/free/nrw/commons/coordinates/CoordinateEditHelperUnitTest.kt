@@ -46,7 +46,7 @@ class CoordinateEditHelperUnitTest {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         context = ApplicationProvider.getApplicationContext()
         helper = CoordinateEditHelper(notificationHelper, pageEditClient, viewUtilWrapper)
         `when`(media.filename).thenReturn("")

@@ -39,7 +39,7 @@ class NotificationClientTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         notificationClient = NotificationClient(service, csrfTokenClient)
     }
 

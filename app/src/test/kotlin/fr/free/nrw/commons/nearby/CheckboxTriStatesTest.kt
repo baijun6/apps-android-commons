@@ -31,7 +31,7 @@ class CheckBoxTriStatesTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         checkBoxTriStates = CheckBoxTriStates(ApplicationProvider.getApplicationContext())
         checkBoxTriStates.setCallback(callback)
         checkBoxTriStates.setOnCheckedChangeListener(onCheckChangeListener)

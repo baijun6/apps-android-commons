@@ -99,7 +99,7 @@ class ImageLoaderTest {
     @ExperimentalCoroutinesApi
     fun setup() {
         Dispatchers.setMain(testDispacher)
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         imageLoader =
             ImageLoader(mediaClient, fileProcessor, fileUtilsWrapper, uploadedStatusDao,

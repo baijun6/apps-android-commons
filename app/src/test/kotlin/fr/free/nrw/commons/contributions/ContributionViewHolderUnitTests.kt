@@ -73,7 +73,7 @@ class ContributionViewHolderUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         SoLoader.setInTestMode()
         Fresco.initialize(ApplicationProvider.getApplicationContext())
         activity = Robolectric.buildActivity(ProfileActivity::class.java).create().get()

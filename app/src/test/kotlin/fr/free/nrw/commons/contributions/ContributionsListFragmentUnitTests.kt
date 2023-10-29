@@ -102,7 +102,7 @@ class ContributionsListFragmentUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         AppAdapter.set(TestAppAdapter())
 
         context = ApplicationProvider.getApplicationContext()

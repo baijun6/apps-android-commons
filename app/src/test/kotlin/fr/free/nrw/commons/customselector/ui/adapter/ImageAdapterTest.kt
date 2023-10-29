@@ -70,7 +70,7 @@ class ImageAdapterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         Dispatchers.setMain(testDispatcher)
         activity = Robolectric.buildActivity(CustomSelectorActivity::class.java).get()
         imageAdapter = ImageAdapter(activity, imageSelectListener, imageLoader)

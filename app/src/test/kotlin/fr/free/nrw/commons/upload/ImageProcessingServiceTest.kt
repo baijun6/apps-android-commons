@@ -40,7 +40,7 @@ class u {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         val mediaUri = mock(Uri::class.java)
         val mockPlace = mock(Place::class.java)
         val mockTitle = mock(List::class.java)

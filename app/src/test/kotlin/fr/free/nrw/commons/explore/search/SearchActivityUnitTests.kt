@@ -87,7 +87,7 @@ class SearchActivityUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         activity = Robolectric.buildActivity(SearchActivity::class.java).create().get()
         context = ApplicationProvider.getApplicationContext()
     }

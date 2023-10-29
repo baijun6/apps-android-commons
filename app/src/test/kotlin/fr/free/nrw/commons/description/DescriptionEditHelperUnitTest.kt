@@ -32,7 +32,7 @@ class DescriptionEditHelperUnitTest {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         helper = DescriptionEditHelper(notificationHelper, pageEditClient)
     }
 

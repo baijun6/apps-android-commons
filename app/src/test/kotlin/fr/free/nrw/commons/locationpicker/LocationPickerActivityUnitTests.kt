@@ -94,7 +94,7 @@ class LocationPickerActivityUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         context = RuntimeEnvironment.getApplication().applicationContext
         activity = Robolectric.buildActivity(LocationPickerActivity::class.java).get()
 

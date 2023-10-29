@@ -45,7 +45,7 @@ class NearbyParentFragmentPresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         nearbyPresenter = NearbyParentFragmentPresenter(bookmarkLocationsDao)
         nearbyPresenter.attachView(nearbyParentFragmentView)
     }

@@ -40,7 +40,7 @@ internal class OnSwipeTouchListenerTest {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         AppAdapter.set(TestAppAdapter())
 
         context = ApplicationProvider.getApplicationContext()

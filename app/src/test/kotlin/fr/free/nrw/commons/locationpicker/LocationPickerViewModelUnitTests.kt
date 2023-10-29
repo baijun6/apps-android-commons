@@ -35,7 +35,7 @@ class LocationPickerViewModelUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         viewModel = LocationPickerViewModel(application)
 
         Whitebox.setInternalState(viewModel, "result", result)

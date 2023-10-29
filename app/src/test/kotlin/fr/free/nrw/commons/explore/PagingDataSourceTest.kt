@@ -25,7 +25,7 @@ class PagingDataSourceTest {
     @Before
     fun setUp() {
         RxJavaPlugins.setIoSchedulerHandler { Schedulers.trampoline() }
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         loadingStates = PublishProcessor.create()
         searchDepictionsDataSource =
             TestPagingDataSource(

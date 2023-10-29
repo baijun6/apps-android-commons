@@ -18,7 +18,7 @@ class BookmarkLocationControllerTest {
 
      @Before
      fun setup() {
-         MockitoAnnotations.initMocks(this)
+         MockitoAnnotations.openMocks(this)
          whenever(bookmarkDao!!.allBookmarksLocations)
              .thenReturn(mockBookmarkList)
      }

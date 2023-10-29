@@ -42,7 +42,7 @@ class MediaLicensePresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         mediaLicensePresenter.onAttachView(view)
         PowerMockito.mockStatic(Utils::class.java)
         PowerMockito.`when`(Utils.licenseNameFor(ArgumentMatchers.anyString())).thenReturn(1)

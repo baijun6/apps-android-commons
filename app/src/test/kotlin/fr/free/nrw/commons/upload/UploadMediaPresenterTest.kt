@@ -73,7 +73,7 @@ class UploadMediaPresenterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         testObservableUploadItem = Observable.just(uploadItem)
         testSingleImageResult = Single.just(1)
         testScheduler = TestScheduler()

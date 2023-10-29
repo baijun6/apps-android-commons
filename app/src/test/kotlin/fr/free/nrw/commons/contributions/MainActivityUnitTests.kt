@@ -84,7 +84,7 @@ class MainActivityUnitTests {
 
     @Before
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         AppAdapter.set(TestAppAdapter())
 
         activity = Robolectric.buildActivity(MainActivity::class.java).create().get()

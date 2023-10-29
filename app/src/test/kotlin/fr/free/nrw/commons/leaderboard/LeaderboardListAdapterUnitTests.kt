@@ -44,7 +44,7 @@ class LeaderboardListAdapterUnitTests {
     @Before
     fun setUp() {
         context = ApplicationProvider.getApplicationContext()
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         SoLoader.setInTestMode()
         Fresco.initialize(context)
 

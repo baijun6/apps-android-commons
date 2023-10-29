@@ -49,7 +49,7 @@ class FolderAdapterTest {
     @Before
     @Throws(Exception::class)
     fun setUp() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         activity = Robolectric.buildActivity(CustomSelectorActivity::class.java).get()
         image = Image(1, "image", uri, "abc/abc", 1, "bucket1")

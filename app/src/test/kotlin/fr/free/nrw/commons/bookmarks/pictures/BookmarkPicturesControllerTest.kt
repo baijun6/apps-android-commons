@@ -34,7 +34,7 @@ class BookmarkPicturesControllerTest {
      */
     @Before
     fun setup() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
         val mockMedia = mockMedia
         whenever(bookmarkDao!!.allBookmarks)
             .thenReturn(mockBookmarkList)
